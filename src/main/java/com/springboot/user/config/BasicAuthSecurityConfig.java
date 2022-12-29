@@ -15,23 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class BasicAuthSecurityConfig extends WebSecurityConfigurerAdapter
 {
-    /*@Override
-    protected void configure(AuthenticationManagerBuilder auth) 
-      throws Exception {
-        PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
-        auth.inMemoryAuthentication()
-          .withUser("user1")
-          .password(encoder.encode("password"))
-          .roles("ADMIN");
-    }
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest()
-          .authenticated()
-          .and()
-          .httpBasic();
-    }*/
     
     @Override
     protected void configure(HttpSecurity http) throws Exception 
